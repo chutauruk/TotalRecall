@@ -35,14 +35,23 @@ const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
 const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
 
 1. plantee[2]++;
+console.log(plantee)
 2.wolfy[3]="Gotham City";
+console.log(wolfy)
 3.dart[3] ="Upside Down, Hawkins";
+console.log(dart)
 4.wolfy[0]="Gameboy";
+console.log(wolfy)
+
 
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
-
+const ninjaTurtles["Donatello", "Leonardo","Raphael", "Michaelangelo"];
+for(let i of ninjaTurtles){
+    i=i.toUpperCase();
+    console.log(i)
+}
 
 ////////////////////////////////
 // Methods, Revisited
