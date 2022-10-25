@@ -124,7 +124,21 @@ console.log(whereIsWaldo[2][1][1]);
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
+for (let i=1; i < 21;i++){ 
+    if (i%2 === 0){
+        let randomNumber = Math.floor(Math.random()*3)
+        if(randomNumber===0){console.log("...human...why you taking pictures of me?...")} 
+        if(randomNumber===1){console.log("...the catnip made me do it...")}
+        if(randomNumber===2){console.log("...why does the red dot always get away...")} 
+    } else{
+       console.log("Love me, pet me!HSSSSS");      
+}
+} 
 
+// let kittenTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+// for (let i = 1; i<21; i++){
+//     i%2 === 0 ? console.log(kittenTalk[Math.floor(Math.random()*kittenTalk.length)]) : console.log("Love me, pet me!HSSSSS");
+// }
 
 ////////////////////////////////
 //  Find the Median
