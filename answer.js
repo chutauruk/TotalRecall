@@ -56,13 +56,71 @@ for(let i of ninjaTurtles){
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
+console.log(favMovies[8]);
+
+console.log(favMovies.indexOf("Titanic"));
+
+1. console.log(favMovies.sort()
+2. console.log(favMovies.pop())
+3. console.log(favMovies.push("Guardians of the Galaxy"))
+4. console.log(favMovies.reverse())
+5. console.log(favMovies.shift())
+6. console.log(favMovies.unshift())
+7. 
+const index = favMovies.indexOf('django unchained');
+favMovies.splice(3,1, "Avatar")
+if (index !== -1) {
+    favMovies[index] = 'avatar';
+}
+ console.log(favMovies);
+
+ //console.log(favMovies.findIndex(e =>  e === "Django Unchained"))
+
+//  for (let i = 0; i < favMovies.length; i++) {
+//     if (favMovies[i] == 'Django Unchained') {
+//         favMovies.splice();
+//         favMovies[i] = "Avatar";}
+
+// console.log(favMovies.indexOf("Django Unchained"));
+// favMovies.splice(15, 0, "Avatar" );
+
+//favMovies.splice(14, 1, "Avatar")
+
+
+8.function sliceMiddle(favMovies) {
+    console.log(favMovies.length)
+    console.log(favMovies.slice((favMovies.length - 1) / 2, favMovies.length / 2 + 1));
+  }
+
+sliceMiddle()
+
+console.log(favMovies.slice(9,18)); //No, this will not permanently alter the array, since it's only through console.log
+const sliceMiddle = (favMovies.slice(1,9));
+console.log(sliceMiddle);
+console.log(favMovies[18]);
+9. console.log(sliceMiddle());
+10. console.log(favMovies[18]);
+11. ?
+12.
 
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
 
+whereIsWaldo.splice(1,1);
+console.log(whereIsWaldo);
 
+//neff to no one
+whereIsWaldo[1][2] = "No One";
+console.log(whereIsWaldo);
+
+//Where is waldo
+console.log(whereIsWaldo[2][1][1]);
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
