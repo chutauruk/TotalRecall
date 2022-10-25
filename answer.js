@@ -15,7 +15,15 @@ for (let i = 0; i <= 200; i+=2);{
 ////////////////////////////////
 // Fizz Buzz
 ////////////////////////////////
-
+for (let i = 0; i <= 100; i++){
+    if(i % 3 == 0 && i % 5 == 0){
+        console.log(`FizzBuzz`)
+    } else if(i % 5 == 0){
+        console.log(`Buzz`)
+    } else(i % 3 == 0){
+        console.log(`Fizz`)
+    }
+}
 
 ////////////////////////////////
 // Wild Wild Life
